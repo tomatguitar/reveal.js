@@ -1,40 +1,663 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section
+          data-background-image="./assets/background.png"
+          data-background-size="cover"
+        >
+          <h1 style="text-shadow: -2px 2px 2px rgba(150, 150, 150, 1)">
+            <span>MACHINE LEARNING</span><br />
+            <span>(OVERVIEW)</span>
+          </h1>
+        </section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+        <section data-background-color="rgb(38, 53, 64)">
+          <img
+            src="./assets/machine-learning-machine-learning-everywhere.jpg"
+            alt="ml-is-everywhere"
+          />
+        </section>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        <section>
+          <section data-background-image="./assets/wp1.jpg">
+            <h2 style="text-shadow: -2px 2px 2px rgba(150, 150, 150, 1)">
+              The history of Machine learning
+            </h2>
+          </section>
+
+          <section>
+            <div style="display: flex; justify-content: flex-start">
+              <div style="display: flex; flex-direction: column; width: 25vw">
+                <img
+                  src="./assets/Turing.jpg"
+                  alt="Turing"
+                  width="200px"
+                  height="100%"
+                />
+              </div>
+              <div style="width: 75vw">
+                <p style="font-size: 40px">
+                  In 1950 Alan Turing published an article answering the
+                  question, “Can machines think?”
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div style="display: flex; justify-content: flex-start">
+              <div style="display: flex; flex-direction: column; width: 25vw">
+                <img
+                  src="./assets/Rosenblatt.png"
+                  alt="Rosenblatt"
+                  width="250px"
+                  height="100%"
+                />
+              </div>
+              <div style="width: 75vw">
+                <p style="font-size: 40px">
+                  In 1957, Frank Rosenblatt designed the first neural network
+                  for computers, now commonly called the Perceptron model.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div style="display: flex; justify-content: flex-start">
+              <div style="display: flex; flex-direction: column; width: 25vw">
+                <img
+                  src="./assets/Widrow.png"
+                  alt="Turing"
+                  width="250px"
+                  height="100%"
+                />
+                <img
+                  src="./assets/Hoff.jpg"
+                  alt="Turing"
+                  width="250px"
+                  height="100%"
+                />
+              </div>
+              <div style="display: flex; width: 75vw">
+                <p style="font-size: 40px; align-self: center">
+                  In 1959, Bernard Widrow and Marcian Hoff created two network
+                  models called Adeline, that could detect binary patterns and
+                  Madeline, that could eliminate echo on phone lines.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div style="display: flex; justify-content: flex-start">
+              <div style="display: flex; flex-direction: column; width: 25vw">
+                <img
+                  src="./assets/Dejong.jpg"
+                  alt="Dejong"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+              <div style="width: 75vw">
+                <p style="font-size: 40px">
+                  Gerald Dejong in 1981 introduced the concept of
+                  explanation-based learning, in which a computer analyzes data
+                  and creates a general rule to discard unimportant information.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section
+            data-background-image="./assets/large_data.jpeg"
+            data-auto-animate
+            data-background-size="cover"
+          >
+            <div style="display: flex; flex-direction: column">
+              <p
+                style="
+                  font-size: 50px;
+                  font-weight: 700;
+                  text-shadow: 1px 1px 5px rgb(0, 0, 0, 1);
+                "
+              >
+                During 1990s machine learning shifted from a knowledge-driven
+                approach to a more data-driven approach.
+              </p>
+            </div>
+          </section>
+
+          <section
+            data-background-image="./assets/large_data.jpeg"
+            data-auto-animate
+            data-background-size="cover"
+          >
+            <div style="display: flex; flex-direction: column">
+              <p
+                style="
+                  font-size: 50px;
+                  font-weight: 700;
+                  text-shadow: 1px 1px 5px rgb(0, 0, 0, 1);
+                "
+              >
+                During 1990s machine learning shifted from a knowledge-driven
+                approach to a more data-driven approach.
+              </p>
+            </div>
+            <div style="display: flex; flex-direction: row">
+              <img
+                src="./assets/IBM_Watson.png"
+                width="350px"
+                alt="IBM_Watson"
+              />
+              <p
+                style="
+                  font-size: 50px;
+                  font-weight: 700;
+                  text-shadow: 1px 1px 5px rgb(0, 0, 0, 1);
+                "
+              >
+                In 2002 IBM’s Watson beat two human champions in a game of
+                Jeopardy
+              </p>
+            </div>
+          </section>
+
+          <section
+            data-background-image="./assets/large_data.jpeg"
+            data-auto-animate
+            data-background-size="cover"
+          >
+            <div style="display: flex; flex-direction: column">
+              <p
+                style="
+                  font-size: 40px;
+                  font-weight: 700;
+                  text-shadow: 1px 1px 5px rgb(0, 0, 0, 1);
+                "
+              >
+                During 1990s machine learning shifted from a knowledge-driven
+                approach to a more data-driven approach.
+              </p>
+            </div>
+            <div style="display: flex; flex-direction: row">
+              <img
+                src="./assets/IBM_Watson.png"
+                width="350px"
+                alt="IBM_Watson"
+              />
+              <p
+                style="
+                  font-size: 40px;
+                  font-weight: 700;
+                  text-shadow: 1px 1px 5px rgb(0, 0, 0, 1);
+                "
+              >
+                In 2002 IBM’s Watson beat two human champions in a game of
+                Jeopardy
+              </p>
+            </div>
+            <div style="display: flex; flex-direction: row">
+              <img
+                src="./assets/AlphaGo.jpg"
+                width="250px"
+                height="50%"
+                alt="IBM_Watson"
+              />
+              <p
+                style="
+                  font-size: 40px;
+                  font-weight: 700;
+                  text-shadow: 1px 1px 5px rgb(0, 0, 0, 1);
+                "
+              >
+                In the 2016, Google’s AlphaGo program became the first computer
+                program to beat a professional human using a combination of ML
+                and tree search techniques
+              </p>
+            </div>
+          </section>
+        </section>
+
+        <section data-background-color="rgb(103, 143, 174)">
+          <div>
+            <img
+              src="./assets/google_brain.png"
+              width="250px"
+              height="100%"
+              alt="google_brain"
+            />
+            <img
+              src="./assets/alexNet.png"
+              width="250px"
+              height="100%"
+              alt="alexNet"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/deepmind.jpg"
+              width="250px"
+              height="100%"
+              alt="deepmind"
+            />
+            <img
+              src="./assets/openai.png"
+              width="250px"
+              height="100%"
+              alt="openai"
+            />
+          </div>
+          <img
+            src="./assets/deepface.png"
+            width="20%"
+            height="100%"
+            alt="deepface"
+          />
+        </section>
+
+        <section data-background-color="rgb(103, 143, 174)">
+          <div style="display: flex; justify-content: space-around">
+            <img
+              src="./assets/Amazon_logo.svg"
+              width="250px"
+              height="100%"
+              alt="Amazon"
+              style="align-self: center"
+            />
+            <img
+              src="./assets/Google__G__Logo.svg"
+              width="15%"
+              height="100%"
+              alt="Google"
+            />
+          </div>
+          <div style="display: flex; justify-content: space-around">
+            <img
+              src="./assets/IBM_logo.svg"
+              width="250px"
+              height="100%"
+              alt="IBM"
+            />
+            <img
+              src="./assets/Netflix_logo.svg"
+              width="250px"
+              height="100%"
+              alt="Netflix"
+            />
+          </div>
+          <img
+            src="./assets/Salesforce_Logo.jpg"
+            width="250px"
+            height="100%"
+            alt="Salesforce"
+          />
+        </section>
+
+        <section data-background-image="./assets/wp3.jpg">
+          <h3 style="text-shadow: -2px 2px 2px rgba(150, 150, 150, 1)">
+            Common uses of machine learning
+          </h3>
+          <ul style="font-size: 30px">
+            <li>
+              <b style="color: khaki">Computational finance</b>, for credit
+              scoring and algorithmic trading
+            </li>
+            <li>
+              <b style="color: khaki">Image processing and computer vision</b>,
+              for face recognition, motion detection, and object detection
+            </li>
+            <li>
+              <b style="color: khaki">Computational biology</b>, for tumor
+              detection, drug discovery, and DNA sequencing
+            </li>
+            <li>
+              <b style="color: khaki">Energy production</b>, for price and load
+              forecasting
+            </li>
+            <li>
+              <b style="color: khaki"
+                >Automotive, aerospace, and manufacturing</b
+              >, for predictive maintenance
+            </li>
+            <li>
+              <b style="color: khaki">Natural language processing</b>, for voice
+              recognition applications
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <section data-background-image="./assets/wp.jpg">
+            <h2 style="text-shadow: -2px 2px 2px rgba(150, 150, 150, 1)">
+              What is machine learning?
+            </h2>
+          </section>
+
+          <section data-background-color="rgb(9,26,72)">
+            <p>
+              ML is the ability of all machines to learn without being
+              explicitly programmed.
+            </p>
+            <img src="./assets/What-is-Machine-Learning.png" alt="what-is-ml" />
+          </section>
+        </section>
+
+        <section>
+          <section data-background-image="./assets/wp4.jpg">
+            <h2 style="text-shadow: -2px 2px 2px rgba(150, 150, 150, 1)">
+              Machine learnig techniques
+            </h2>
+          </section>
+
+          <section>
+            <img src="./assets/ml-techniques.png" alt="ml-techniques" />
+          </section>
+
+          <section>
+            <img src="./assets/supervised.png" alt="supervised" />
+          </section>
+
+          <section data-auto-animate>
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <img
+                src="./assets/classification.png"
+                width="410px"
+                alt="classification"
+              />
+              <p>Classification</p>
+            </div>
+          </section>
+
+          <section data-auto-animate>
+            <div style="display: flex">
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  width: 50vw;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="./assets/classification.png"
+                  width="410px"
+                  alt="classification"
+                />
+                <p>Classification</p>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                "
+              >
+                <h4>Common classification alogrithms:</h4>
+                <ul style="font-size: 35px">
+                  <li>k-nearest neighbor</li>
+                  <li>Naïve Bayes</li>
+                  <li>discriminant analysis</li>
+                  <li>logistic regression</li>
+                  <li>support vector machine (SVM)</li>
+                  <li>boosted and bagged decision trees</li>
+                  <li>neural networks</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section data-auto-animate>
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <img src="./assets/regression.png" alt="regression" />
+              <p>Regression</p>
+            </div>
+          </section>
+
+          <section data-auto-animate>
+            <div style="display: flex">
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  align-items: center;
+                "
+              >
+                <img src="./assets/regression.png" alt="regression" />
+                <p>Regression</p>
+              </div>
+              <div style="display: flex; flex-direction: column">
+                <h4>Common regression alogrithms:</h4>
+                <ul style="font-size: 35px">
+                  <li>linear model</li>
+                  <li>nonlinear model</li>
+                  <li>regularization</li>
+                  <li>stepwise regression</li>
+                  <li>boosted and bagged decision trees</li>
+                  <li>adaptive neuro-fuzzy learning</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <img src="./assets/unsupervised.png" alt="unsupervised" />
+          </section>
+
+          <section data-auto-animate>
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <img
+                src="./assets/clustering.png"
+                width="447px"
+                height="293px"
+                alt="clustering"
+              />
+              <p>Clustering</p>
+            </div>
+          </section>
+
+          <section data-auto-animate>
+            <div style="display: flex">
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="./assets/clustering.png"
+                  width="447px"
+                  height="293px"
+                  alt="clustering"
+                />
+                <p>Clustering</p>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                "
+              >
+                <h4>Common clustering alogrithms:</h4>
+                <ul style="font-size: 35px">
+                  <li>k-means and k-medoids</li>
+                  <li>hierarchical clustering</li>
+                  <li>Gaussian mixture models</li>
+                  <li>hidden Markov models</li>
+                  <li>self-organizing maps</li>
+                  <li>fuzzy c-means clustering</li>
+                  <li>subtractive clustering</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <img
+              src="./assets/reinforced-learning.png"
+              alt="reinforced-learning"
+            />
+          </section>
+
+          <section>
+            <h4>Reinforcement learinig alogrithms:</h4>
+            <ul style="font-size: 35px; margin-bottom: 40px">
+              <li>Value-based</li>
+              <li>Policy-based</li>
+              <li>Model-based</li>
+            </ul>
+            <h4>Learning Models of Reinforcement:</h4>
+            <ul style="font-size: 35px">
+              <li>Markov Decision Process</li>
+              <li>Q learning</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section data-background-image="./assets/wp5.jpg">
+            <h2 style="text-shadow: -2px 2px 2px rgba(150, 150, 150, 1)">
+              ML frameworks and libraries
+            </h2>
+          </section>
+
+          <section data-background-color="rgb(25,62,78)">
+            <img
+              src="./assets/top-machine-learning-frameworks.jpg"
+              alt="top-machine-learning-frameworks"
+            />
+          </section>
+
+          <section data-background-color="rgb(18,76,113)">
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <div style="width: 30vw; margin-right: 20px">
+                <img src="./assets/tf_logo.png" alt="tensorflow" />
+              </div>
+              <ul style="font-size: 35px">
+                <li>Developed by Google</li>
+                <li>
+                  Perform regression, classification, neural networks, etc.
+                </li>
+                <li>Run on both CPUs and GPUs</li>
+                <li>Simple enough for the basic user</li>
+              </ul>
+            </div>
+          </section>
+
+          <section data-background-color="rgb(10,63,95)">
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <div style="width: 30vw; margin-right: 20px">
+                <img src="./assets/pytorch.png" alt="pytorch" />
+              </div>
+              <ul style="font-size: 35px">
+                <li>Developed by Facebook AI Research</li>
+                <li>Leading competitor to TensorFlow</li>
+                <li>
+                  Perform regression, classification, neural networks, etc.
+                </li>
+                <li>Run on both CPUs and GPUs</li>
+                <li>Considered to be more customizable</li>
+              </ul>
+            </div>
+          </section>
+
+          <section data-background-color="rgb(18,76,113)">
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <div style="width: 30vw; margin-right: 20px">
+                <img src="./assets/scikit-Learn_logo.jpg" alt="scikit-Learn" />
+              </div>
+              <ul style="font-size: 35px">
+                <li>Good to run quick ML model sketches</li>
+                <li>Leading competitor to TensorFlow</li>
+                <li>
+                  Provides model analysis tools like the confusion matrix
+                </li>
+                <li>
+                  Has excellent data pre-processing tools for one-hot encoding
+                  categorical data
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section data-background-color="rgb(114,180,228)">
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <div style="width: 30vw; margin-right: 20px">
+                <img
+                  src="./assets/Apache_Spark_logo.svg"
+                  alt="Apache_Spark_logo"
+                />
+              </div>
+              <ul style="font-size: 35px; color: white">
+                <li>Can run in clusters</li>
+                <li>Works with Spark SQL dataframes</li>
+                <li>
+                  Provides model analysis tools like the confusion matrix
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <h3>Thank you for attention!</h3>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
